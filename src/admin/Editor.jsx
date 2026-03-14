@@ -83,7 +83,7 @@ export default function Editor(){
     title,
     content,
     category,
-    tags: tags.split(","),
+    tags: Array.isArray(tags) ? tags : tags.split(","),
     videoUrl,
     seoTitle,
     seoDescription,
